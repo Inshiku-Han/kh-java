@@ -1,0 +1,8 @@
+Generate 기능
+Generate Constructor from superclass : 디폴트 생성자 생성
+Generate Constructor using field : 매개변수 생성자 생성
+Getters and Setters : getter setter 생성
+Generate toString : 필드변수를 문자열로 리턴
+override/implement method : object클래스 생성(equals, toString 등등)
+
+구글에 java api 8 : object기능 확인가능
