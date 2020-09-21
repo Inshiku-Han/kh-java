@@ -1,4 +1,0 @@
-file - export - genaral - archive file - 프로젝트 지정 - 위치지정 - 완료
-
-
-file - import - general - exsisting project file... - 압출파일 지정 - 완료
