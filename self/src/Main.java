@@ -1,5 +1,7 @@
+import java.util.Scanner;
 
 public class Main {
+	static Scanner sc = new Scanner(System.in);
 	public static void main(String[] args) {
 
 //		int[][] a = new int[3][4];
@@ -28,6 +30,9 @@ public class Main {
 //			System.out.println("i의 값 = " + i + " __ " +"j의 값 = "+ j);
 //		}
 //		System.out.println("합계 = " + j);
+		
+		
+		
 		
 	}
 }
