@@ -7,8 +7,8 @@ public class VOListTest {
 
 		VOList<MyVO> list = new VOList<>();
 
-		list.add(new MemberVO());
-		list.add(new BoardVO());
+		list.add(new MemberVO("java","자바", "123"));
+		list.add(new BoardVO(1,"게시판","이하 내용"));
 		
 		list.get();
 	}

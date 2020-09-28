@@ -14,6 +14,9 @@ public class init {
 		System.out.println(allBox2.get());
 		
 		
+		Box<String> newBox = BoxFactory.makeBox("새로운 상자");
+		
+		System.out.println(newBox);
 		
 	}
 
@@ -42,4 +45,18 @@ class Box<T> {
 		return t;
 	}
 
+	@Override
+	public String toString() {
+		return "Box [t=" + t + "]";
+	}
+	
+
+}
+//제네릭 메소드
+class BoxFactory {
+	public static <T> Box<T> makeBox(T t){
+		Box<T> box = new Box<>();
+		box.set(t);
+		return box;
+	}
 }

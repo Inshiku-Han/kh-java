@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Main {
 	static Scanner sc = new Scanner(System.in);
+
 	public static void main(String[] args) {
 
 //		int[][] a = new int[3][4];
@@ -30,9 +31,35 @@ public class Main {
 //			System.out.println("i의 값 = " + i + " __ " +"j의 값 = "+ j);
 //		}
 //		System.out.println("합계 = " + j);
-		
-		
-		
-		
+
+		//소인수분해
+		int n, c, k, y;
+		int s[] = new int[10];
+		while (true) {
+			n = sc.nextInt();
+			if (n < 2) {
+				break;
+			}
+			c = -1;
+			do {
+				k = 2;
+				while (n % k != 0) {
+					k++;
+				}
+				c++;
+				s[c] = k;
+				n /= k;
+			} while (n != 1);
+			if (c == 0) {
+				System.out.println("소수");
+			} else {
+				for (y = 0; y <= c -1; y++) {
+					System.out.printf("%dX", s[y]);
+					System.out.printf("%d", s[c]);
+				}
+			}
+		}
+		sc.close();
+
 	}
 }
