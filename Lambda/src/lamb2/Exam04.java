@@ -15,6 +15,7 @@ public class Exam04 {
 
 		List<Integer> list2 = new ArrayList<>(list);
 
+		//removeIf ¸Þ¼Òµå
 		list2.removeIf((num) -> num % 2 == 0);
 		
 		System.out.println(list2);
